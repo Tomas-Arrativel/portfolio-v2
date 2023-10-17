@@ -14,13 +14,23 @@
   display: flex;
   align-items: center;
   gap: 20px;
+  list-style: none;
+}
+
+.link:hover {
+  color: #eee;
 }
 
 .logout {
-  padding: 5px;
+  padding: 5px 10px;
   border: none;
   background-color: #c14747;
-  color: #fff;
+  color: #ddd;
   cursor: pointer;
   border-radius: 3px;
+  font-size: 15px;
+}
+
+.logout:hover {
+  color: #fff;
 }

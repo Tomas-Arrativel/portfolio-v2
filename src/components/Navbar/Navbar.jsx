@@ -39,7 +39,7 @@ const links = [
 function Navbar() {
   return (
     <div className={styles.container}>
-      <Link href='/' className={styles.container}>
+      <Link href='/' className={styles.logo}>
         Tomás Arrativel
       </Link>
       <ul className={styles.links}>

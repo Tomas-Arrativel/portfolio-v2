@@ -1,2 +1,50 @@
 .container {
 }
+
+.mainTitle {
+  font-size: 100px;
+}
+
+.selectTitle {
+  margin: 20px 0;
+}
+
+.items {
+  display: flex;
+  gap: 50px;
+}
+
+.item {
+  border: 5px solid #ccc;
+  border-radius: 6px;
+  width: 300px;
+  height: 400px;
+  position: relative;
+  background-size: cover !important;
+  background-position: center !important;
+  transition: opacity 0.2s;
+}
+
+.item:hover .itemTitle {
+  color: #53c28b;
+  transform: scale(1.05);
+}
+.item:hover {
+  opacity: 0.8;
+}
+
+.item:nth-child(1) {
+  background: url('/timeline.jpg');
+}
+.item:nth-child(2) {
+  background: url('/illustration.png');
+}
+
+.itemTitle {
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  font-size: 30px;
+  font-weight: 700;
+  transition: all 0.2s;
+}

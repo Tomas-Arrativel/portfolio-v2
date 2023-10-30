@@ -12,7 +12,7 @@ async function BlogPage() {
   const data = await getData();
   return (
     <div className={styles.container}>
-      {data.map((item) => {
+      {data.map((item) => (
         <Link
           href='/blog/testId'
           className={styles.postContainer}
@@ -31,8 +31,8 @@ async function BlogPage() {
             <h1 className={styles.title}>{item.title}</h1>
             <p className={styles.description}>description</p>
           </div>
-        </Link>;
-      })}
+        </Link>
+      ))}
     </div>
   );
 }

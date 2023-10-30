@@ -3,7 +3,13 @@ import styles from './page.module.css';
 import Image from 'next/image';
 
 async function getData() {
-  const res = await fetch('https://jsonplaceholder.typicode.com/posts');
+  const res = await fetch('https://jsonplaceholder.typicode.com/posts', {
+    cache: 'no-store',
+  });
+
+  if (!res.ok) {
+    throw new Error("Couldn't load the posts");
+  }
 
   return res.json();
 }
@@ -14,7 +20,7 @@ async function BlogPage() {
     <div className={styles.container}>
       {data.map((item) => (
         <Link
-          href='/blog/testId'
+          href={`/blog/${item.id}`}
           className={styles.postContainer}
           key={item.id}
         >

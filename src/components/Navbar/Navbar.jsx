@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import styles from './navbar.module.css';
+import DarkModeToggle from '../DarkModeToggle/DarkModeToggle';
 
 const links = [
   {
@@ -43,6 +44,7 @@ function Navbar() {
         Tomás Arrativel
       </Link>
       <ul className={styles.links}>
+        <DarkModeToggle />
         {links.map((link) => (
           <li key={link.id}>
             <Link href={link.url} className={styles.link}>

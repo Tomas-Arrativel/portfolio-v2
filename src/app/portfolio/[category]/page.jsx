@@ -9,11 +9,46 @@ function PortfolioCategory({ params }) {
       <div className={styles.item}>
         <div className={styles.content}>
           <h1 className={styles.title}>Test</h1>
-          <p className={styles.paragraph}>Test</p>
+          <p className={styles.description}>Test</p>
           <Button link='#' text='Test' />
         </div>
         <div className={styles.imgContainer}>
-          <Image src='' alt='' fill={true} className={styles.img} />
+          <Image
+            src='https://images.pexels.com/photos/1647121/pexels-photo-1647121.jpeg?auto=compress&cs=tinysrgb&w=1600'
+            alt='street art'
+            fill={true}
+            className={styles.img}
+          />
+        </div>
+      </div>
+      <div className={styles.item}>
+        <div className={styles.content}>
+          <h1 className={styles.title}>Test</h1>
+          <p className={styles.description}>Test</p>
+          <Button link='#' text='Test' />
+        </div>
+        <div className={styles.imgContainer}>
+          <Image
+            src='https://images.pexels.com/photos/1647121/pexels-photo-1647121.jpeg?auto=compress&cs=tinysrgb&w=1600'
+            alt='street art'
+            fill={true}
+            className={styles.img}
+          />
+        </div>
+      </div>
+      <div className={styles.item}>
+        <div className={styles.content}>
+          <h1 className={styles.title}>Test</h1>
+          <p className={styles.description}>Test</p>
+          <Button link='#' text='Test' />
+        </div>
+        <div className={styles.imgContainer}>
+          <Image
+            src='https://images.pexels.com/photos/1647121/pexels-photo-1647121.jpeg?auto=compress&cs=tinysrgb&w=1600'
+            alt='street art'
+            fill={true}
+            className={styles.img}
+          />
         </div>
       </div>
     </div>

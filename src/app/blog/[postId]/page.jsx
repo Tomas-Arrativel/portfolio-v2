@@ -3,7 +3,7 @@ import styles from './page.module.css';
 import { notFound } from 'next/navigation';
 
 async function getData(id) {
-  const res = await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`, {
+  const res = await fetch(`http://localhost:5432/api/posts/${id}`, {
     cache: 'no-store',
   });
 

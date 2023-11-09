@@ -20,14 +20,14 @@ async function BlogPage() {
     <div className={styles.container}>
       {data.map((item) => (
         <Link
-          href={`/blog/${item.id}`}
+          href={`/blog/${item._id}`}
           className={styles.postContainer}
-          key={item.id}
+          key={item._id}
         >
           <div className={styles.imageContainer}>
             <Image
-              src='https://images.pexels.com/photos/2119706/pexels-photo-2119706.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
-              alt='street art in snowy wall'
+              src={item.img}
+              alt=''
               height={250}
               width={400}
               className={styles.image}
@@ -35,7 +35,7 @@ async function BlogPage() {
           </div>
           <div className={styles.content}>
             <h1 className={styles.title}>{item.title}</h1>
-            <p className={styles.description}>description</p>
+            <p className={styles.description}>{item.description}</p>
           </div>
         </Link>
       ))}
